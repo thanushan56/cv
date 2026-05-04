@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanushan</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 30px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            display: block;
+            margin: 0 auto 20px;
+            object-fit: cover;
+        }
+
+        .sidebar h2 {
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        .contact-info p, .sidebar li {
+            font-size: 0.9rem;
+            margin: 10px 0;
+            list-style: none;
+        }
+
+        .skills-list, .lang-list {
+            padding: 0;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            line-height: 1.1;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            margin-top: 30px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .exp-item, .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-weight: bold;
+            color: #666;
+            font-size: 0.85rem;
+            display: block;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #222;
+            display: block;
+        }
+
+        .company {
+            color: var(--accent-color);
+            font-style: italic;
+        }
+
+        .ref-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!-- Replace 'your-image.jpg' with your actual image file path -->
+        <img src="1140.jpg" alt="Thanushan Tharmalingam" class="profile-img">
+        
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>📞 +94752664187</p>
+            <p>📧 thanujantharun@gmail.com</p>
+            <p>📍 Pillaiyar Kovil Road,<br>Korakallimadu</p>
+        </div>
+
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>• Leadership</li>
+            <li>• Teamwork</li>
+            <li>• Time Management</li>
+            <li>• Marketing</li>
+            <li>• WPS Office</li>
+            <li>• Google Sheets</li>
+            <li>• Web Development</li>
+            
+        </ul>
+
+        <h2>Languages</h2>
+        <ul class="lang-list">
+            <li>• English</li>
+            <li>• Tamil</li>
+            <li>• Sinhala</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <h1>THANUSHAN<br>THARMALINGAM</h1>
+        </header>
+
+        <section>
+            <h2 class="section-title">About Me</h2>
+            <p>To obtain a challenging position in a high-quality environment and situations where my experience and academic skills will add value to the operation.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="exp-item">
+                <span class="date">SEP 2024 - PRESENT</span>
+                <span class="job-title">Manager</span>
+                <span class="company">Next Capital Trust</span>
+            </div>
+
+            <div class="exp-item">
+                <span class="date">JUL 2022 - SEP 2024</span>
+                <span class="job-title">Recovery Officer</span>
+                <span class="company">Commercial Credit</span>
+            </div>
+
+            <div class="exp-item">
+                <span class="date">MAR 2022 - JUL 2022</span>
+                <span class="job-title">Executive - Deputy HOB</span>
+                <span class="company">LB Finance PLC</span>
+            </div>
+
+            <div class="exp-item">
+                <span class="date">DEC 2020 - MAR 2022</span>
+                <span class="job-title">Recovery Officer</span>
+                <span class="company">Commercial Credit</span>
+            </div>
+
+            <div class="exp-item">
+                <span class="date">JUN 2018 - DEC 2020</span>
+                <span class="job-title">Credit (Marketing Officer)</span>
+                <span class="company">Commercial Credit</span>
+            </div>
+
+            <div class="exp-item">
+                <span class="date">SEP 2016 - MAR 2018</span>
+                <span class="job-title">Credit (Marketing Officer)</span>
+                <span class="company">LB Finance PLC</span>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <span class="date">2014 | Index No: 3652530</span>
+                <strong>G.C.E O/L Examination</strong> - Completed
+            </div>
+            <div class="edu-item">
+                <span class="date">2011/2016 | Index No: 14711099 / 69079870</span>
+                <strong>G.C.E O/L Examination</strong> - Completed
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">References</h2>
+            <div class="ref-grid">
+                <div>
+                    <strong>S. Vijitharan</strong><br>
+                    Operation Manager, Next Capital Trust<br>
+                    📞 0777162875
+                </div>
+                <div>
+                    <strong>S. Puvinthason</strong><br>
+                    DO, DS Office<br>
+                    📞 0771339327
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
